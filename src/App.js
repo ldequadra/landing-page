@@ -1,6 +1,4 @@
 import './App.css';
-import firebase_logo_white from './img/firebase-logo-white.png';
-import firebase_logo_color from './img/firebase-logo-color.png';
 
 function App() {
   return (
