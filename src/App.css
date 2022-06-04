@@ -1,3 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  --clr-primary: #F2F2F2;
+  --clr-secondary: #0070F3;
+  --clr-secondary-hover: #1983FF;
+  --clr-form: #FFF;
+  --clr-form-hover: #F9F9F9;
+  --clr-font: #303030;
+  --clr-button: #FFF;
+
+  --fw-thin: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
-  text-align: center;
+  height: 540px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-left: 150px;
+}
+
+.company-name {
+  color: var(--clr-secondary);
+  font-size: 20px;
+  font-weight: var(--fw-medium);
+  margin-bottom: 20px;
+}
+
+.title {
+  width: 650px;
+  color: var(--clr-font);
+  font-size: 48px;
+  font-weight: var(--fw-bold);
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--clr-font);
+  width: 650px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.a__orange {
+  color: var(--clr-secondary);
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.email-input {
+  background-color: var(--clr-form);
+  color: var(--clr-font);
+  font-size: 14px;
+  height: 50px;
+  width: 550px;
+  padding-left: 30px;
+  border: 1px solid #C5C5C5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.email-input::placeholder {
+  color: var(--clr-font);
+}
+
+.email-input:focus {
+  outline: none;
+  border: 1px solid var(--clr-font);
+}
+
+.email-input:hover {
+  background-color: var(--clr-form-hover);
+}
+
+.submit-button {
+  background-color: var(--clr-secondary);
+  color: var(--clr-button);
+  font-size: 14px;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.submit-button:hover {
+  background-color: var(--clr-secondary-hover);
+  cursor: pointer;
+}
+
+.socialbar {
+  margin-bottom: 5px;
+}
+
+.socialbar a {
+  color: var(--clr-font);
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.socialbar i {
+  transition: all ease 0.2s;
+}
+
+.socialbar i:hover {
+  color: var(--clr-secondary);
+  cursor: pointer;
+}
+
+.footer {
+  color: var(--clr-font);
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: var(--clr-font);
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+  transition: all ease 0.2s;
+}
+
+.footer a:hover {
+  color: var(--clr-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
 }
